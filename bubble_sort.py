@@ -17,8 +17,8 @@ def bubble_sort(my_list):
         num_of_compare_round2 = 0
         for j in range(len_my_list-i-1):
             num_of_compare_round2 += 1
-            if mylist[j] > mylist[j+1]:
-                mylist[j], mylist[j+1] = mylist[j+1], mylist[j]
+            if my_list[j] > my_list[j+1]:
+                my_list[j], my_list[j+1] = my_list[j+1], my_list[j]
             else:
                 sort_complete_num += 1
         num_of_compare_round += num_of_compare_round2
@@ -26,12 +26,14 @@ def bubble_sort(my_list):
             print("sort has completed")
             break
     print("num_of_compare_round {}".format(num_of_compare_round))
-    return mylist
+    return my_list
 
 
 if __name__ == "__main__":
-    mylist = [9, 3, 1, 4, 2, 7, 8, 6, 5]
-    mylist1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    mylist1 = bubble_sort(mylist1)
-    print(mylist1)
+    my_list = [9, 3, 1, 4, 2, 7, 8, 6, 5]
+    my_list = bubble_sort(my_list)
+    print(my_list)
+    my_list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    my_list1 = bubble_sort(my_list1)
+    print(my_list1)
 
