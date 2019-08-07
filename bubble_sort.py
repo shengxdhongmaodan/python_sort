@@ -6,8 +6,8 @@
 
 def bubble_sort(my_list):
     """
-
-    :param my_list:
+    升序
+    :param my_list: 传入要排序的列表
     :return:
     """
     len_my_list = len(my_list)
